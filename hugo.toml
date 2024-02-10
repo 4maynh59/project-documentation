@@ -1,4 +1,29 @@
-baseURL = 'https://example.org/'
+baseURL = 'http://wiki.project-demo.hm.com'
 languageCode = 'en-us'
 title = 'Project documentation'
 theme='hugo-theme-relearn'
+
+[outputs]
+  home = ["HTML", "RSS", "SEARCH", "SEARCHPAGE"]
+
+[social]
+  [[social.links]]
+    name = "GitHub"
+    url = "https://github.com/Boldizsarb/Industrial_consulting_project"
+    weight = 1
+
+
+[[menu.shortcuts]]
+	name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+	identifier = "ds"
+	url = "https://github.com/Boldizsarb/Industrial_consulting_project"
+	weight = 10
+
+[[menu.shortcuts]]
+	name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+	url = "showcase/"
+	weight = 20
+[[menu.shortcuts]]
+	name = "<i class='fas fa-fw fa-tags'></i> Tags"
+	url = "tags/"
+	weight = 30
